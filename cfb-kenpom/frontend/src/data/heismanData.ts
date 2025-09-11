@@ -320,14 +320,14 @@ function calculateHeismanScore(candidate: Omit<HeismanCandidate, 'heismanScore'>
   return calibratedScore;
 }
 
-export const heismanCandidates: HeismanCandidate[] = [
+const candidateData = [
   {
     id: 1,
     name: "Travis Hunter",
-    position: "WR",
+    position: "WR" as const,
     team: "Colorado",
     conference: "Big 12",
-    year: "JR",
+    year: "JR" as const,
     height: "6'1\"",
     weight: 185,
     hometown: "West Palm Beach, FL",
@@ -367,7 +367,7 @@ export const heismanCandidates: HeismanCandidate[] = [
     
     // Heisman metrics
     currentOdds: "+200",
-    oddsMovement: "up",
+    oddsMovement: "up" as const,
     weeklyRank: 1,
     previousRank: 1,
     
@@ -405,10 +405,10 @@ export const heismanCandidates: HeismanCandidate[] = [
   {
     id: 2,
     name: "Ashton Jeanty",
-    position: "RB",
+    position: "RB" as const,
     team: "Boise State",
     conference: "Mountain West",
-    year: "JR",
+    year: "JR" as const,
     height: "5'9\"",
     weight: 215,
     hometown: "Frisco, TX",
@@ -486,10 +486,10 @@ export const heismanCandidates: HeismanCandidate[] = [
   {
     id: 3,
     name: "Cam Ward",
-    position: "QB",
+    position: "QB" as const,
     team: "Miami",
     conference: "ACC",
-    year: "GR",
+    year: "GR" as const,
     height: "6'2\"",
     weight: 223,
     hometown: "West Columbia, SC",
@@ -567,10 +567,10 @@ export const heismanCandidates: HeismanCandidate[] = [
   {
     id: 4,
     name: "Dillon Gabriel",
-    position: "QB",
+    position: "QB" as const,
     team: "Oregon",
     conference: "Big Ten",
-    year: "GR",
+    year: "GR" as const,
     height: "6'0\"",
     weight: 200,
     hometown: "Mililani, HI",
@@ -645,17 +645,19 @@ export const heismanCandidates: HeismanCandidate[] = [
     
     heismanScore: 0
   }
-].map(candidate => ({
+];
+
+export const heismanCandidates: HeismanCandidate[] = candidateData.map(candidate => ({
   ...candidate,
   heismanScore: calculateHeismanScore(candidate)
-}));
+})) as HeismanCandidate[];
 
 // Historical Heisman winners for reference
 export const historicalWinners = [
   {
     year: 2023,
     winner: "Jayden Daniels",
-    position: "QB",
+    position: "QB" as const,
     team: "LSU",
     record: "10-4",
     keyStats: "3812 pass yds, 40 pass TD, 1134 rush yds, 10 rush TD"
@@ -663,7 +665,7 @@ export const historicalWinners = [
   {
     year: 2022,
     winner: "Caleb Williams",
-    position: "QB", 
+    position: "QB" as const, 
     team: "USC",
     record: "11-3",
     keyStats: "4537 pass yds, 42 pass TD, 382 rush yds, 10 rush TD"
@@ -671,7 +673,7 @@ export const historicalWinners = [
   {
     year: 2021,
     winner: "Bryce Young",
-    position: "QB",
+    position: "QB" as const,
     team: "Alabama", 
     record: "13-2",
     keyStats: "4872 pass yds, 47 pass TD, 5 INT - National Champions"
@@ -679,7 +681,7 @@ export const historicalWinners = [
   {
     year: 2020,
     winner: "DeVonta Smith",
-    position: "WR",
+    position: "WR" as const,
     team: "Alabama",
     record: "13-0", 
     keyStats: "1856 rec yds, 23 rec TD - National Champions"
@@ -687,7 +689,7 @@ export const historicalWinners = [
   {
     year: 2019,
     winner: "Joe Burrow",
-    position: "QB",
+    position: "QB" as const,
     team: "LSU",
     record: "15-0",
     keyStats: "5671 pass yds, 60 pass TD, 6 INT - National Champions"
