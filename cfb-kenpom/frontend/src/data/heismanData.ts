@@ -384,11 +384,11 @@ const candidateData = [
     specialTeamsImpact: true, // Defensive plays, returns
     
     recentGames: [
-      { opponent: "vs BYU (Big 12 CG)", result: "W", stats: "116 rec yds, 2 TD, 4 tackles", performance: 9.1 },
-      { opponent: "@ Kansas", result: "W", stats: "125 rec yds, 3 TD, 1 INT", performance: 9.4 },
-      { opponent: "vs Utah", result: "W", stats: "55 rec yds, 1 TD, 6 tackles", performance: 7.8 },
-      { opponent: "@ Texas Tech", result: "L", stats: "99 rec yds, 1 TD, 3 tackles", performance: 8.2 },
-      { opponent: "vs Cincinnati", result: "W", stats: "153 rec yds, 2 TD, 5 tackles", performance: 9.6 }
+      { opponent: "vs BYU (Big 12 CG)", result: "W" as const, stats: "116 rec yds, 2 TD, 4 tackles", performance: 9.1 },
+      { opponent: "@ Kansas", result: "W" as const, stats: "125 rec yds, 3 TD, 1 INT", performance: 9.4 },
+      { opponent: "vs Utah", result: "W" as const, stats: "55 rec yds, 1 TD, 6 tackles", performance: 7.8 },
+      { opponent: "@ Texas Tech", result: "L" as const, stats: "99 rec yds, 1 TD, 3 tackles", performance: 8.2 },
+      { opponent: "vs Cincinnati", result: "W" as const, stats: "153 rec yds, 2 TD, 5 tackles", performance: 9.6 }
     ],
     
     mediaAttention: 98,
@@ -448,7 +448,7 @@ const candidateData = [
     
     // Heisman metrics
     currentOdds: "+750",
-    oddsMovement: "stable",
+    oddsMovement: "stable" as const,
     weeklyRank: 2,
     previousRank: 2,
     
@@ -465,11 +465,11 @@ const candidateData = [
     specialTeamsImpact: false,
     
     recentGames: [
-      { opponent: "vs UNLV (MW CG)", result: "W", stats: "209 yds, 2 TD", performance: 9.2 },
-      { opponent: "@ Wyoming", result: "W", stats: "285 yds, 3 TD", performance: 9.7 },
-      { opponent: "vs Air Force", result: "W", stats: "156 yds, 2 TD", performance: 8.4 },
-      { opponent: "@ Colorado State", result: "W", stats: "267 yds, 4 TD", performance: 9.8 },
-      { opponent: "vs Nevada", result: "W", stats: "209 yds, 3 TD", performance: 9.1 }
+      { opponent: "vs UNLV (MW CG)", result: "W" as const, stats: "209 yds, 2 TD", performance: 9.2 },
+      { opponent: "@ Wyoming", result: "W" as const, stats: "285 yds, 3 TD", performance: 9.7 },
+      { opponent: "vs Air Force", result: "W" as const, stats: "156 yds, 2 TD", performance: 8.4 },
+      { opponent: "@ Colorado State", result: "W" as const, stats: "267 yds, 4 TD", performance: 9.8 },
+      { opponent: "vs Nevada", result: "W" as const, stats: "209 yds, 3 TD", performance: 9.1 }
     ],
     
     mediaAttention: 88,
@@ -529,7 +529,7 @@ const candidateData = [
     
     // Heisman metrics
     currentOdds: "+1200",
-    oddsMovement: "down",
+    oddsMovement: "down" as const,
     weeklyRank: 3,
     previousRank: 2,
     
@@ -546,11 +546,11 @@ const candidateData = [
     specialTeamsImpact: false,
     
     recentGames: [
-      { opponent: "vs SMU (ACC CG)", result: "L", stats: "280 yds, 2 TD, 1 INT", performance: 7.4 },
-      { opponent: "@ Syracuse", result: "W", stats: "349 yds, 3 TD", performance: 9.3 },
-      { opponent: "vs Wake Forest", result: "W", stats: "296 yds, 2 TD", performance: 8.1 },
-      { opponent: "@ Georgia Tech", result: "W", stats: "348 yds, 3 TD", performance: 9.2 },
-      { opponent: "vs Duke", result: "W", stats: "400 yds, 5 TD", performance: 9.8 }
+      { opponent: "vs SMU (ACC CG)", result: "L" as const, stats: "280 yds, 2 TD, 1 INT", performance: 7.4 },
+      { opponent: "@ Syracuse", result: "W" as const, stats: "349 yds, 3 TD", performance: 9.3 },
+      { opponent: "vs Wake Forest", result: "W" as const, stats: "296 yds, 2 TD", performance: 8.1 },
+      { opponent: "@ Georgia Tech", result: "W" as const, stats: "348 yds, 3 TD", performance: 9.2 },
+      { opponent: "vs Duke", result: "W" as const, stats: "400 yds, 5 TD", performance: 9.8 }
     ],
     
     mediaAttention: 84,
@@ -610,7 +610,7 @@ const candidateData = [
     
     // Heisman metrics
     currentOdds: "+2500",
-    oddsMovement: "stable",
+    oddsMovement: "stable" as const,
     weeklyRank: 4,
     previousRank: 4,
     
@@ -627,11 +627,11 @@ const candidateData = [
     specialTeamsImpact: false,
     
     recentGames: [
-      { opponent: "vs Penn State (Big Ten CG)", result: "W", stats: "283 yds, 2 TD", performance: 8.7 },
-      { opponent: "vs Washington", result: "W", stats: "209 yds, 2 TD", performance: 8.1 },
-      { opponent: "@ Wisconsin", result: "W", stats: "218 yds, 2 TD", performance: 7.9 },
-      { opponent: "vs Maryland", result: "W", stats: "326 yds, 3 TD", performance: 9.0 },
-      { opponent: "@ Michigan", result: "W", stats: "294 yds, 1 TD", performance: 8.2 }
+      { opponent: "vs Penn State (Big Ten CG)", result: "W" as const, stats: "283 yds, 2 TD", performance: 8.7 },
+      { opponent: "vs Washington", result: "W" as const, stats: "209 yds, 2 TD", performance: 8.1 },
+      { opponent: "@ Wisconsin", result: "W" as const, stats: "218 yds, 2 TD", performance: 7.9 },
+      { opponent: "vs Maryland", result: "W" as const, stats: "326 yds, 3 TD", performance: 9.0 },
+      { opponent: "@ Michigan", result: "W" as const, stats: "294 yds, 1 TD", performance: 8.2 }
     ],
     
     mediaAttention: 76,

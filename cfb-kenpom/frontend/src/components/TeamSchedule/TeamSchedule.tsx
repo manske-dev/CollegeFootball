@@ -321,7 +321,7 @@ const TeamSchedule: React.FC = () => {
         
         <Grid container spacing={2}>
           {statisticalLeaders.map((leader, index) => (
-            <Grid item xs={12} md={6} key={index}>
+            <Grid xs={12} md={6} key={index}>
               <Card sx={{ height: '100%' }}>
                 <CardContent>
                   <Typography variant="subtitle1" fontWeight="bold" color="primary.main">
